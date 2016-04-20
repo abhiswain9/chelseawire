@@ -34,6 +34,28 @@
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
+    <script>
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+      }
+    </script>
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -52,6 +74,7 @@
               <li><a href="#opinion">Opinion</a></li>
               <li><a href="#leaguetable">League Table</a></li>
               <li><a href="#videos">Videos</a></li>
+              <li><a href="#footer">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -78,24 +101,41 @@
         <p>Antonio Conte will step down from his position as manager of Italy following Euro 2016. Conte has been heavily linked with the managerial vacancy at Chelsea and this move increases the prospect of him taking over at Stamford Bridge. The 46-year-old was appointed Italy manager in August 2014 shortly after resigning as coach of Juventus </p>
         <img src="img/conte.jpg" class="img-responsive">
         <br>
-        <a class="btn btn-default" href=#facpage> Explore Story </a>
+        <a class="btn btn-default" href="http://www.dailymail.co.uk/sport/premierleague/article-3421512/Chelsea-set-sights-Italy-s-Antonio-Conte-long-term-replacement-Jose-Mourinho.html"target="_blank"> Explore Story </a>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <h2> Eden Hazard to leave for PSG </h2>
         <p> Barclays Player of the Year 2014, Eden Hazard, has been tempted by a mega offer by Parisian club PSG. The offer is believed to eclipse the $100m world record fee paid by Real Madrid to Manchester United for Cristaino Ronaldo. Although the club have consistently asserted he is not for sale, an offer of the magnitude the French club has offered cannot be ignored.</p>
         <img src="img/hazard.jpg" class="img-responsive">
         <br>
-          <a class="btn btn-default" href=#facpage> Explore Story </a>
+          <a class="btn btn-default" href="http://www.tribalfootball.com/articles/psg-eyeing-chelsea-pair-eden-hazard-and-thibaut-courtois-4121069" target="_blank"> Explore Story </a>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <h2> Chelsea 2 West Brom 2 </h2>
         <p> James McClean's late equaliser earned West Brom a share of the points as they refused to accept defeat at Chelsea. The Blues went ahead when Cesar Azpilicueta turned in fellow full-back Branislav Ivanovic's low cross.  Craig Gardner's skimming shot levelled, but it seemed Chelsea had done enough when Gareth McAuley prodded Willian's cross into his own net.</p>
         <img src="img/westbrom.jpg" class="img-responsive">
           <br>
-        <a class="btn btn-default" href=#facpage> Explore Story </a>
+        <a class="btn btn-default" href="http://www.bbc.com/sport/football/35239779" target="_blank"> Explore Story </a>
       </div>
     </div>
 
+    <div class="row" id="morestories">
+
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">More Stories</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="http://weaintgotnohistory.sbnation.com/" target="_blank">We Ain't Got No History</a>
+          <a href="http://www.theguardian.com/football/chelsea" target="_blank">The Guardian</a>
+          <a href="http://bleacherreport.com/chelsea" target="_blank">Bleacher Report</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+    </div>
+
+    </div>
     <!--page for scores-->
     <div class="row" id="scores">
       <div class="col-md-4"></div>
@@ -289,34 +329,42 @@
 
     <!--page for videos-->
     <div class="row" id="videos">
+
       <h1> Videos </h1>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/5BgY_mxjb88" frameborder="0" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/fwpE_Xgl93w" frameborder="0" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/w-U-ayMx_XI" frameborder="0" allowfullscreen></iframe>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/4Pral3noklQ" frameborder="0" allowfullscreen></iframe>
+
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/5BgY_mxjb88" frameborder="0" allowfullscreen></iframe></div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/fwpE_Xgl93w" frameborder="0" allowfullscreen></iframe></div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/w-U-ayMx_XI" frameborder="0" allowfullscreen></iframe></div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/4Pral3noklQ" frameborder="0" allowfullscreen></iframe></div>
+      </div>
+
     </div>
 
-
-    <div class="row" id="stadiumpic">
-       <img class="img img-responsive" src="img/ifitnotblue.jpg">
-     </div>
-
      <div class="row" id="footer">
+
+        <div class="row">
          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-           <h2> The Chelsea Wire </h2>
+           <h1> The Chelsea Wire </h1>
            <div class="fb-like" data-href="https://www.facebook.com/ChelseaFC" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
          </div>
          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
            <p> Site Created by Abhishek Swain, a student at Washington University in St. Louis, for academic purposes. All copyrights belong to Chelsea Football Club, and all content to their respective owners. No commerical use inteded. </p>
          </div>
          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-           <ul>
-                <li><a href="btn btn-default" href="https://www.linkedin.com/in/abhiswain" target="_blank">LinkedIn</a></li>
-                <li><a href="btn btn-default" href="https://github.com/abhiswain9" target="_blank">Github</a></li>
-                <li><a href="btn btn-default" href="mailto:abhiswain9@gmail.com?Subject=Chelsea%20Wire%20Contact" target="_top">Email</a></li>
-           </ul>
+           <h4>Contact Information </h4>
+                <p><a href="https://www.linkedin.com/in/abhiswain" target="_blank">LinkedIn</a></p>
+                <p><a href="https://github.com/abhiswain9" target="_blank">Github</a></p>
+                <p><a href="mailto:abhiswain9@gmail.com?Subject=Chelsea%20Wire%20Contact" target="_top">Email</a></p>
          </div>
      </div>
+   </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
