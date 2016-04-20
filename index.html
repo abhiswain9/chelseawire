@@ -1,99 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Chelsea Wire | Chelsea News and Scores</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Chelsea Wire | Chelsea News and Scores</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!--custom font -->
-    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Linden+Hill' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!--custom fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Linden+Hill' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 
-    <link href="stylesheets/custom.css" rel="stylesheet">
+  <!--custom stylesheet -->
+  <link href="stylesheets/custom.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
+  <!-- Facebook like script credit:https://developers.facebook.com/docs/plugins/like-button-->
+  <div id="fb-root"></div>
+  <script>
+  (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
     fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
 
-    <script>
-      /* When the user clicks on the button,
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
+  <!-- script for the dropdown menu -->
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
 
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
         }
       }
-      }
-    </script>
+    }
+  }
+  </script>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">The Chelsea Wire </a>
-        </div>
-        <div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li><a href="#headlines">Headlines</a></li>
-              <li><a href="#scores">Scores</a></li>
-              <li><a href="#opinion">Opinion</a></li>
-              <li><a href="#leaguetable">League Table</a></li>
-              <li><a href="#videos">Videos</a></li>
-              <li><a href="#footer">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-
+  <!-- sticky navbar code -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
-      <div class="page-header">
-         <img class="pull-left img-responsive img-rounded" src="img/badge.png"/>
-        <h1 id="webheader">The Chelsea Wire</h1>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">The Chelsea Wire </a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#headlines">Headlines</a></li>
+            <li><a href="#scores">Scores</a></li>
+            <li><a href="#opinion">Opinion</a></li>
+            <li><a href="#leaguetable">League Table</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
     </div>
+  </nav>
 
-    <div class = "jumbotron">
-      <p> The Chelsea Wire provides the latest Chelsea Football Club News.</p>
-      <p> Keep the Blue Flag Flying High.</p>
+  <div class="container-fluid">
+    <div class="page-header">
+      <img class="pull-left img-responsive img-rounded" src="img/badge.png"/>
+      <h1>The Chelsea Wire</h1>
     </div>
+  </div>
 
-    <!--headlines-->
+  <div class = "jumbotron">
+    <p> The Chelsea Wire provides the latest Chelsea Football Club News.</p>
+    <p> Keep the Blue Flag Flying High.</p>
+  </div>
+
+  <!--headlines page-->
+  <div class="container-fluid">
     <div class="row" id="headlines">
       <h1> Headlines </h1>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -108,47 +115,52 @@
         <p> Barclays Player of the Year 2014, Eden Hazard, has been tempted by a mega offer by Parisian club PSG. The offer is believed to eclipse the $100m world record fee paid by Real Madrid to Manchester United for Cristaino Ronaldo. Although the club have consistently asserted he is not for sale, an offer of the magnitude the French club has offered cannot be ignored.</p>
         <img src="img/hazard.jpg" class="img-responsive">
         <br>
-          <a class="btn btn-default" href="http://www.tribalfootball.com/articles/psg-eyeing-chelsea-pair-eden-hazard-and-thibaut-courtois-4121069" target="_blank"> Explore Story </a>
+        <a class="btn btn-default" href="http://www.tribalfootball.com/articles/psg-eyeing-chelsea-pair-eden-hazard-and-thibaut-courtois-4121069" target="_blank"> Explore Story </a>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <h2> Chelsea 2 West Brom 2 </h2>
         <p> James McClean's late equaliser earned West Brom a share of the points as they refused to accept defeat at Chelsea. The Blues went ahead when Cesar Azpilicueta turned in fellow full-back Branislav Ivanovic's low cross.  Craig Gardner's skimming shot levelled, but it seemed Chelsea had done enough when Gareth McAuley prodded Willian's cross into his own net.</p>
         <img src="img/westbrom.jpg" class="img-responsive">
-          <br>
+        <br>
         <a class="btn btn-default" href="http://www.bbc.com/sport/football/35239779" target="_blank"> Explore Story </a>
       </div>
     </div>
+  </div>
 
+  <!--button for more stories-->
+  <div class="container-fluid">
     <div class="row" id="morestories">
-
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-      <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">More Stories</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="http://weaintgotnohistory.sbnation.com/" target="_blank">We Ain't Got No History</a>
-          <a href="http://www.theguardian.com/football/chelsea" target="_blank">The Guardian</a>
-          <a href="http://bleacherreport.com/chelsea" target="_blank">Bleacher Report</a>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">More Stories</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="http://weaintgotnohistory.sbnation.com/" target="_blank">We Ain't Got No History</a>
+            <a href="http://www.theguardian.com/football/chelsea" target="_blank">The Guardian</a>
+            <a href="http://bleacherreport.com/chelsea" target="_blank">Bleacher Report</a>
+          </div>
         </div>
       </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
-    </div>
+  </div>
 
-    </div>
-    <!--page for scores-->
+  <!--page for scores-->
+  <div class="container-fluid">
     <div class="row" id="scores">
       <div class="col-md-4"></div>
       <div class="col-md-4">
-          <h1> Latest Scores </h1>
-          <h2>Chelsea 2-2 West Brom </h2>
-          <h2>Chelsea 0-2 Man City </h2>
-          <h2>Chelsea 0-1 Swansea </h2>
+        <h1> Latest Scores </h1>
+        <h2>Chelsea 2-2 West Brom </h2>
+        <h2>Chelsea 0-2 Man City </h2>
+        <h2>Chelsea 0-1 Swansea </h2>
       </div>
       <div class="col-md-4"></div>
     </div>
+  </div>
 
-    <!--headlines-->
+  <!--headlines-->
+  <div class="container-fluid">
     <div class="row" id="opinion">
       <h1> Editorial </h1>
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -162,23 +174,23 @@
         <p> As a manager he took the same club to three consecutive scudetti: each more impressive than the last. Juventus went undefeated in their first Serie A campaign under Conte, before improving their points tally in each of the next two seasons. His team finished the last of those, 2013-14, by becoming the first club to shatter the 100-point mark in the Italian top flight. </p>
         <div id="maureen" class="collapse">
 
-        <p> There is a story from that final campaign – told by the Italian journalist Alessandro Alciato in his book Metodo Conte – that reveals much about the manager’s mentality. With one game to go, Juventus were on 99 points. The title had been wrapped up weeks earlier but Conte had prepared rigorously for the final match against Cagliari – intent on achieving a full century. Juve’s players were just settling in for a video review session when the goalkeeper Gigi Buffon arrived with the club’s chief executive, Beppe Marotta. </p>
+          <p> There is a story from that final campaign – told by the Italian journalist Alessandro Alciato in his book Metodo Conte – that reveals much about the manager’s mentality. With one game to go, Juventus were on 99 points. The title had been wrapped up weeks earlier but Conte had prepared rigorously for the final match against Cagliari – intent on achieving a full century. Juve’s players were just settling in for a video review session when the goalkeeper Gigi Buffon arrived with the club’s chief executive, Beppe Marotta. </p>
 
-        <p> “Excuse me for one moment, boss,” Buffon said. “The director just wants to clear up the question of bonuses owed to the team after the title win.” </p>
+          <p> “Excuse me for one moment, boss,” Buffon said. “The director just wants to clear up the question of bonuses owed to the team after the title win.” </p>
 
-        <p>  The suggestion sent Conte into a fury. He chased every player out of the room as he tore into Buffon. “I don’t want to hear another word,” Conte is said to have screamed. “From you, of all people, I would never have expected such a thing. Bonuses … You’re a disappointment, a defeat from the moment you open your mouth. Just like all the rest of these half-wits.” </p>
+          <p>  The suggestion sent Conte into a fury. He chased every player out of the room as he tore into Buffon. “I don’t want to hear another word,” Conte is said to have screamed. “From you, of all people, I would never have expected such a thing. Bonuses … You’re a disappointment, a defeat from the moment you open your mouth. Just like all the rest of these half-wits.” </p>
 
-        <p>In another context, such a rant could have backfired. Not every footballer would accept being dressed down so harshly. Buffon and his team-mates, though, recognised the intent of Conte’s words was more important than their content. Shaken out of any complacency, Juventus beat Cagliari 3-0.</p>
+          <p>In another context, such a rant could have backfired. Not every footballer would accept being dressed down so harshly. Buffon and his team-mates, though, recognised the intent of Conte’s words was more important than their content. Shaken out of any complacency, Juventus beat Cagliari 3-0.</p>
 
-        <p> It is tempting to draw comparisons between Conte and his Chelsea predecessor José Mourinho. Both are combative, stubborn and talented – not to mention adept at selling the narrative that the whole world is out to get their team. But the 46-year-old Conte may resemble another former Premier League manager even more closely. When Carlos Tevez was asked during his first season at Juventus what differences existed between Conte and Sir Alex Ferguson, his reply was: “Not many.” </p>
+          <p> It is tempting to draw comparisons between Conte and his Chelsea predecessor José Mourinho. Both are combative, stubborn and talented – not to mention adept at selling the narrative that the whole world is out to get their team. But the 46-year-old Conte may resemble another former Premier League manager even more closely. When Carlos Tevez was asked during his first season at Juventus what differences existed between Conte and Sir Alex Ferguson, his reply was: “Not many.” </p>
 
-        <a class="btn btn-default" href="http://www.theguardian.com/football/2016/apr/04/antonio-conte-chelsea-manager-volcanic" target="_blank"> Read more at the Guardian </a>
+          <a class="btn btn-default" href="http://www.theguardian.com/football/2016/apr/04/antonio-conte-chelsea-manager-volcanic" target="_blank"> Read more at the Guardian </a>
         </div>
         <br>
         <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#maureen">Read more</button>
 
       </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <h2> Beat Mourinho with Lukaku Stick </h2>
         <h4> Another way Mourino massively screwed up </h4>
         <img src="img/lukaku.jpg" class="img-responsive">
@@ -195,182 +207,183 @@
 
         <p> Placing full blame on Jose is of course far too simplistic and convenient.  He's by no means faultless; he might even be the most responsible of all the people involved (though he'd undoubtedly disagree).  It was Mourinho after all who chose not to play Lukaku, who advocated for keeping, bringing in, and selecting veteran strikers like Eto'o and Drogba and Ba and Torres.  Mourinho was the one who insisted on making this a cut-throat competition for Lukaku despite the big kid's success while on loan.  These weren't necessarily the wrong choices at the time, but just as in the case of Kevin De Bruyne, they turned out to be the wrong choices for that particular situation, and they eventually resulted in Lukaku packing his bags and looking for something different.  In hindsight -- and we care because these two certainly turned out great -- these egregious outcomes could've been avoided with just slightly different management.</p>
 
-          <br>
-          <br>
+        <br>
+        <br>
 
         <a class="btn btn-default" href="http://weaintgotnohistory.sbnation.com/2016/4/20/11464324/jose-mourinho-romelu-lukaku-blame-games-hindsight-angry-words-someone-throw-a-trident" target="_blank"> Read more at SBNation </a>
 
       </div>
       <br>
       <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#luks">Read more</button>
-      </div>
     </div>
+  </div>
+</div>
 
-
-
-    <!--page for roster-->
-    <div class="row" id="leaguetable">
-      <h1> League Table </h1>
-      <h4> Last Updated 4/20/2016 </h4>
-      <div class="table-responsive">
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Position</th>
-              <th>Team</th>
-              <th>Points</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Leicester City</td>
-              <td>73</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Tottenham</td>
-              <td>68</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Manchester City </td>
-              <td>61</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Arsenal</td>
-              <td>73</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Manchester United</td>
-              <td>56</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>West Ham United</td>
-              <td>53</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Southampton</td>
-              <td>51</td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>Liverpool</td>
-              <td>51</td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td>Stoke City</td>
-              <td>47</td>
-            </tr>
-            <tr id="chelseatableentry">
-              <td>10</td>
-              <td>Chelsea</td>
-              <td>44</td>
-            </tr>
-            <tr>
-              <td>11</td>
-              <td>Everton</td>
-              <td>41</td>
-            </tr>
-            <tr>
-              <td>12</td>
-              <td>Watford</td>
-              <td>41</td>
-            </tr>
-            <tr>
-              <td>13</td>
-              <td>AFC Bournemouth</td>
-              <td>41</td>
-            </tr>
-            <tr>
-              <td>14</td>
-              <td>West Brom</td>
-              <td>40</td>
-            </tr>
-            <tr>
-              <td>15</td>
-              <td>Swansea City</td>
-              <td>40</td>
-            </tr>
-            <tr>
-              <td>16</td>
-              <td>Crystal Palace</td>
-              <td>39</td>
-            </tr>
-            <tr>
-              <td>17</td>
-              <td>Norwich City</td>
-              <td>31</td>
-            </tr>
-            <tr>
-              <td>18</td>
-              <td>Sunderland</td>
-              <td>30</td>
-            </tr>
-            <tr>
-              <td>19</td>
-              <td>Newcastle United</td>
-              <td>29</td>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>Aston Villa</td>
-              <td>16</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+<!--page for roster-->
+<div class="container-fluid">
+  <div class="row" id="leaguetable">
+    <h1> League Table </h1>
+    <h4> Last Updated 4/20/2016 </h4>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Position</th>
+            <th>Team</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Leicester City</td>
+            <td>73</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Tottenham</td>
+            <td>68</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Manchester City </td>
+            <td>61</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Arsenal</td>
+            <td>73</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Manchester United</td>
+            <td>56</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>West Ham United</td>
+            <td>53</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Southampton</td>
+            <td>51</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Liverpool</td>
+            <td>51</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Stoke City</td>
+            <td>47</td>
+          </tr>
+          <tr id="chelseatableentry">
+            <td>10</td>
+            <td>Chelsea</td>
+            <td>44</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Everton</td>
+            <td>41</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Watford</td>
+            <td>41</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>AFC Bournemouth</td>
+            <td>41</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>West Brom</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Swansea City</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Crystal Palace</td>
+            <td>39</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Norwich City</td>
+            <td>31</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Sunderland</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Newcastle United</td>
+            <td>29</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Aston Villa</td>
+            <td>16</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+  </div>
+</div>
 
-    <!--page for videos-->
-    <div class="row" id="videos">
+<!--page for videos-->
+<div class="container-fluid">
+  <div class="row" id="videos">
 
-      <h1> Videos </h1>
+    <h1> Videos </h1>
 
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/5BgY_mxjb88" frameborder="0" allowfullscreen></iframe></div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/fwpE_Xgl93w" frameborder="0" allowfullscreen></iframe></div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/w-U-ayMx_XI" frameborder="0" allowfullscreen></iframe></div>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-        <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/4Pral3noklQ" frameborder="0" allowfullscreen></iframe></div>
-      </div>
-
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/5BgY_mxjb88" frameborder="0" allowfullscreen></iframe></div>
     </div>
-
-     <div class="row" id="footer">
-
-        <div class="row">
-         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-           <h1> The Chelsea Wire </h1>
-           <div class="fb-like" data-href="https://www.facebook.com/ChelseaFC" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-         </div>
-         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-           <p> Site Created by Abhishek Swain, a student at Washington University in St. Louis, for academic purposes. All copyrights belong to Chelsea Football Club, and all content to their respective owners. No commerical use inteded. </p>
-         </div>
-         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-           <h4>Contact Information </h4>
-                <p><a href="https://www.linkedin.com/in/abhiswain" target="_blank">LinkedIn</a></p>
-                <p><a href="https://github.com/abhiswain9" target="_blank">Github</a></p>
-                <p><a href="mailto:abhiswain9@gmail.com?Subject=Chelsea%20Wire%20Contact" target="_top">Email</a></p>
-         </div>
-     </div>
-   </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/fwpE_Xgl93w" frameborder="0" allowfullscreen></iframe></div>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/w-U-ayMx_XI" frameborder="0" allowfullscreen></iframe></div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="videoWrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/4Pral3noklQ" frameborder="0" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row" id="footer">
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <h1> The Chelsea Wire </h1>
+      <div class="fb-like" data-href="https://www.facebook.com/ChelseaFC" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <p> Site Created by Abhishek Swain, a student at Washington University in St. Louis, for academic purposes. All copyrights belong to Chelsea Football Club, and all content to their respective owners. No commerical use inteded. </p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <h4>Contact Information </h4>
+      <p><a href="https://www.linkedin.com/in/abhiswain" target="_blank">LinkedIn</a></p>
+      <p><a href="https://github.com/abhiswain9" target="_blank">Github</a></p>
+      <p><a href="mailto:abhiswain9@gmail.com?Subject=Chelsea%20Wire%20Contact" target="_top">Email</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
 
 
 </html>
