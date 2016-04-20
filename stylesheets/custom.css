@@ -1,0 +1,80 @@
+
+.page-header{
+    padding: 55px 25px 5px 25px;
+}
+
+.page-header img {
+  height: 100px;
+}
+
+/* This is to stylize the Chelsea Wire heading at the top of the page*/
+#webheader{
+  padding-left: 120px;
+  font-size: 450%;
+  color: #00025a;
+}
+
+#headlines h1{
+  color:  #00025a
+}
+
+#headlines {
+   padding-bottom: 100px;
+}
+
+h1{
+  color:white;
+  font-weight: bolder;
+}
+
+.jumbotron{
+  padding-left: 50px;
+  padding-right: 50px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: 'Linden Hill', serif;
+}
+
+#banner{
+  padding: 0px 0px 0px 0px;
+}
+
+body{
+    font-family: 'Vollkorn', serif;
+}
+
+.row{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#scores{
+  padding-top: 150px;
+  padding-bottom: 170px;
+  background-color: #23308b;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+#leaguetable{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #0f143b;
+  color: white;
+}
+
+#videos{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #050613;
+  color: white;
+}
+
+#chelseatableentry{
+  font-weight: bolder;
+  font-size: 200%;
+  color: pink;
+}
