@@ -51,9 +51,12 @@ body{
 #scores{
   padding-top: 150px;
   padding-bottom: 170px;
-  background-color: #23308b;
+  background-color: #00025a;
   color: white;
-  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#opinion h1{
+  color: #00025a;
 }
 
 
@@ -62,19 +65,29 @@ body{
   padding-bottom: 100px;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: #0f143b;
+  background-color: #050613;
   color: white;
+}
+
+#videos h1{
+  color:  #00025a
 }
 
 #videos{
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #050613;
-  color: white;
 }
 
 #chelseatableentry{
   font-weight: bolder;
   font-size: 200%;
   color: pink;
+}
+
+#stadiumpic img{
+  width:100%
+}
+
+#stadiumpic{
+  padding: 0px 0px 0px 0px;
 }
