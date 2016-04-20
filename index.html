@@ -24,6 +24,16 @@
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -154,18 +164,6 @@
       <br>
       <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#luks">Read more</button>
       </div>
-
-      <!--
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <h2> Chelsea 2 West Brom 2 </h2>
-        <p> James McClean's late equaliser earned West Brom a share of the points as they refused to accept defeat at Chelsea. The Blues went ahead when Cesar Azpilicueta turned in fellow full-back Branislav Ivanovic's low cross.  Craig Gardner's skimming shot levelled, but it seemed Chelsea had done enough when Gareth McAuley prodded Willian's cross into his own net.</p>
-        <img src="img/westbrom.jpg" class="img-responsive">
-          <br>
-        <a class="btn btn-default" href=#facpage> Explore Story </a>
-      </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <h2> Chelsea 2 West Brom 2 </h2>
-        <p> James McClean's late equaliser earned West Brom a share of the points as they refused to accept defeat at Chelsea. The Blues went ahead when Cesar Azpilicueta turned in fellow full-back Branislav Ivanovic's low cross.  Craig Gardner's skimming shot levelled, but it seemed Chelsea had done enough when Gareth McAuley prodded Willian's cross into his own net.</p>-->
     </div>
 
 
@@ -298,12 +296,33 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/4Pral3noklQ" frameborder="0" allowfullscreen></iframe>
     </div>
 
+
     <div class="row" id="stadiumpic">
-       <img class="img img-responsive" src="img/stadium.jpg">
+       <img class="img img-responsive" src="img/ifitnotblue.jpg">
      </div>
+
+     <div class="row" id="footer">
+         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+           <h2> The Chelsea Wire </h2>
+           <div class="fb-like" data-href="https://www.facebook.com/ChelseaFC" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+           <p> Site Created by Abhishek Swain, a student at Washington University in St. Louis, for academic purposes. All copyrights belong to Chelsea Football Club, and all content to their respective owners. No commerical use inteded. </p>
+         </div>
+         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+           <ul>
+                <li><a href="btn btn-default" href="https://www.linkedin.com/in/abhiswain" target="_blank">LinkedIn</a></li>
+                <li><a href="btn btn-default" href="https://github.com/abhiswain9" target="_blank">Github</a></li>
+                <li><a href="btn btn-default" href="mailto:abhiswain9@gmail.com?Subject=Chelsea%20Wire%20Contact" target="_top">Email</a></li>
+           </ul>
+         </div>
+     </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
+
+
 </html>

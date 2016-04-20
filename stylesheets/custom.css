@@ -59,6 +59,11 @@ body{
   color: #00025a;
 }
 
+#opinion{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 
 #leaguetable{
   padding-top: 100px;
@@ -85,9 +90,20 @@ body{
 }
 
 #stadiumpic img{
-  width:100%
+  width:100%;
 }
 
 #stadiumpic{
   padding: 0px 0px 0px 0px;
+}
+
+#footer{
+
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  background-color:  #050613;
+  color:white;
 }
