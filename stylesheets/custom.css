@@ -2,6 +2,12 @@ body{
     font-family: 'Vollkorn', serif;
 }
 
+img{
+  padding:1px;
+  border:1px solid #021a40;
+
+}
+
 .row{
   padding-left: 50px;
   padding-right: 50px;
@@ -13,7 +19,6 @@ jumbotron
 headlines
 scores
 opinion
-table
 videos
 footer
 */
@@ -23,6 +28,7 @@ footer
 }
 
 .page-header img {
+  border: 0px;
   height: 100px;
 }
 
@@ -39,7 +45,6 @@ JUMBOTRON  <------------
 headlines
 scores
 opinion
-table
 videos
 footer
 */
@@ -52,13 +57,24 @@ footer
   font-family: 'Linden Hill', serif;
 }
 
+#latestscores{
+  /*background-color: #00025a;*/
+  font-family: 'Roboto Condensed',sans-serif;
+  background-color: #050613;
+  color: white;
+}
+
+.scorecell{
+  margin-top:10px;
+  border-right: #C0C0C0 medium solid;
+}
+
 /*
 pageheader
 jumbotron
 HEADLINES  <------------
 scores
 opinion
-table
 videos
 footer
 */
@@ -66,12 +82,70 @@ footer
 #headlines h1{
   color:  #00025a;
   font-weight: bolder;
+  padding-top: 70px;
 }
 
 #morestories{
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 100px;
 }
+
+#morestoriesbtn {
+  padding-top: 100px;
+  background-color:#050613 ;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+}
+
+#morestoriesbtn:hover{
+  background-color: #00025a;
+}
+
+/*Dropdown stuff, credit :http://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown*/
+.dropbtn {
+    background-color:#050613 ;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #00025a;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:9999; //this ensures this element is always on layered first
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
 
 /*
 pageheader
@@ -87,14 +161,55 @@ footer
 #scores h1{
   color: white;
   font-weight: bolder;
+  font-family: 'Vollkorn', serif;
+  padding-bottom: 50px;
+}
+
+#next-games{
+  padding-bottom: 50px;
 }
 
 #scores{
   padding-top: 150px;
-  padding-bottom: 170px;
+  padding-bottom: 20px;
   background-color: #00025a;
   color: white;
-    font-family: 'Linden Hill', serif;
+  font-family: 'Roboto Condensed',sans-serif;
+}
+
+#chelsearesults,#leagueresults,#chelseascores,#leaguescores,#chelseaassists,#leagueassists{
+  padding-top: 10px;
+}
+
+.tab-content {
+  padding-bottom: 50px;
+}
+
+tr:hover{
+  color: black;
+}
+
+.danger{
+  color:black;
+}
+
+#leaguetable h1{
+  color: white;
+  font-weight: bolder;
+}
+
+#leaguetable{
+  background-color: #00025a;
+  color: white;
+}
+
+#leaguetable table{
+  border-width: 6px;
+}
+
+#chelseacell{
+  font-weight: bold;
+  color: #FF69B4;
 }
 
 /*
@@ -103,7 +218,6 @@ jumbotron
 headlines
 scores
 OPINION <------------
-table
 videos
 footer
 */
@@ -118,36 +232,6 @@ footer
   padding-bottom: 100px;
 }
 
-/*
-pageheader
-jumbotron
-headlines
-scores
-opinion
-TABLE <------------
-videos
-footer
-*/
-
-#leaguetable h1{
-  color: white;
-  font-weight: bolder;
-}
-
-#leaguetable{
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 100px;
-  padding-right: 100px;
-  background-color: #00025a;
-  color: white;
-}
-
-#chelseatableentry{
-  font-weight: bolder;
-  font-size: 200%;
-  color: pink;
-}
 
 /*
 pageheader
@@ -155,14 +239,41 @@ jumbotron
 headlines
 scores
 opinion
-table
 VIDEOS <------------
 footer
 */
 
-#videos h1{
-  color:  #00025a;
+#abhispick h1{
   font-weight: bolder;
+}
+
+#abhispick h2{
+  padding-bottom: 20px;
+}
+
+#abhispick h6{
+  padding-bottom: 30px;
+}
+
+#abhispick table{
+  font-family: 'Roboto Condensed', sans-serif;
+  border-width: 6px;
+}
+
+#abhispick{
+  background-color: #00025a;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#fantasypicwrapper{
+  padding-left: 50px;
+}
+
+#videos h1{
+  font-weight: bolder;
+  padding-bottom: 50px;
 }
 
 #videos{
@@ -176,7 +287,6 @@ jumbotron
 headlines
 scores
 opinion
-table
 videos
 FOOTER <------------
 */
@@ -210,43 +320,3 @@ FOOTER <------------
 	width: 100%;
 	height: 100%;
 }
-
-/*Dropdown stuff, credit :http://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown*/
-.dropbtn {
-    background-color:#050613 ;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #00025a;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {background-color: #f1f1f1}
