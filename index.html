@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Chelsea Wire | Chelsea News and Scores</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -47,9 +49,12 @@
       }
     }
   }
-  </script>
 
-  <script scr="script/script.js"></script>
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+  </script>
 
   <!-- sticky navbar code -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -68,7 +73,7 @@
             <li><a href="#headlines">Headlines</a></li>
             <li><a href="#scores">Stat Center</a></li>
             <li><a href="#opinion">Opinion</a></li>
-            <li><a href=#abhispick> Abhi's Pick </a></li>
+            <li><a href=#abhispick> Abhi's Picks </a></li>
             <li><a href="#videos">Videos</a></li>
             <li><a href="#footer">Contact Us</a></li>
           </ul>
@@ -94,8 +99,8 @@
     <p><strong>Keep the Blue Flag Flying High.</strong></p>
   </div>
 
+  <!--scores snapshot-->
   <div class="container-fluid">
-    <!--scores snapshot-->
     <div class="row" id="latestscores">
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
         <div class="scorecell">
@@ -130,54 +135,54 @@
       <h1> Headlines </h1>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <h2> Conte appointed Manager </h2>
-        <p>Antonio Conte will step down from his position as manager of Italy following Euro 2016. Conte has been heavily linked with the managerial vacancy at Chelsea and this move increases the prospect of him taking over at Stamford Bridge. The 46-year-old was appointed Italy manager in August 2014 shortly after resigning as coach of Juventus </p>
+        <p><em>April 28,2016 - </em> Antonio Conte will step down from his position as manager of Italy following Euro 2016. Conte has been heavily linked with the managerial vacancy at Chelsea and this move increases the prospect of him taking over at Stamford Bridge. The 46-year-old was appointed Italy manager in August 2014 shortly after resigning as coach of Juventus </p>
         <img src="img/conte.jpg" class="img-responsive">
         <br>
         <a class="btn btn-default" href="http://www.dailymail.co.uk/sport/premierleague/article-3421512/Chelsea-set-sights-Italy-s-Antonio-Conte-long-term-replacement-Jose-Mourinho.html"target="_blank"> Explore Story </a>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <h2> Eden Hazard to leave for PSG </h2>
-        <p> Barclays Player of the Year 2014, Eden Hazard, has been tempted by a mega offer by Parisian club PSG. The offer is believed to eclipse the $100m world record fee paid by Real Madrid to Manchester United for Cristaino Ronaldo. Although the club have consistently asserted he is not for sale, an offer of the magnitude the French club has offered cannot be ignored.</p>
+        <p><em>April 28,2016 - </em> Barclays Player of the Year 2014, Eden Hazard, has been tempted by a mega offer by Parisian club PSG. The offer is believed to eclipse the $100m world record fee paid by Real Madrid to Manchester United for Cristaino Ronaldo. Although the club have asserted he is not for sale, an offer of the magnitude the French club has offered cannot be ignored.</p>
         <img src="img/hazard.jpg" class="img-responsive">
         <br>
         <a class="btn btn-default" href="http://www.tribalfootball.com/articles/psg-eyeing-chelsea-pair-eden-hazard-and-thibaut-courtois-4121069" target="_blank"> Explore Story </a>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <h2> Chelsea 2 West Brom 2 </h2>
-        <p> James McClean's late equaliser earned West Brom a share of the points as they refused to accept defeat at Chelsea. The Blues went ahead when Cesar Azpilicueta turned in fellow full-back Branislav Ivanovic's low cross.  Craig Gardner's skimming shot levelled, but it seemed Chelsea had done enough when Gareth McAuley prodded Willian's cross into his own net.</p>
+        <h2> Chelsea 4 Bournemouth 1 </h2>
+        <p><em>April 28,2016 - </em> Cesc Fabregas provided Chelsea's first three goals, teeing up Pedro and Hazard in the first half before releasing Willian for the third after the break.The Cherries had got back to 2-1 when Tommy Elphick's header crept in before the interval. But Hazard, who netted 19 times last season, finished from Nemanja Matic's pull-back in injury time.</p>
         <img src="img/westbrom.jpg" class="img-responsive">
         <br>
-        <a class="btn btn-default" href="http://www.bbc.com/sport/football/35239779" target="_blank"> Explore Story </a>
+        <a class="btn btn-default" href="http://www.bbc.com/sport/football/36061117" target="_blank"> Explore Story </a>
       </div>
     </div>
 
-    <!--More Collpsable Headlines-->
+    <!--Collpsable Headlines-->
     <div id="moarstories" class="collapse">
       <div class="row" id="headlines2">
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <h2> Chelsea step closer to Nainggolan  </h2>
-          <p>Italian media claim Chelsea are very close to securing Radja Nainggolan from Roma for €40m (£31m).Their interest in the Belgium international has been clear for some time, but the price-tag is elevated. He turns 28 next week and is under contract with Roma until June 2020. </p>
+          <p><em>April 28,2016 - </em> Italian media claim Chelsea are very close to securing Radja Nainggolan from Roma for €40m (£31m).Their interest in the Belgium international has been clear for some time, but the price-tag is elevated. He turns 28 next week and is under contract with Roma until June 2020. On Monday he scored the decisive late goal to beat Napoli 1-0.</p>
           <img src="img/radja.jpg" class="img-responsive">
           <br>
           <a class="btn btn-default" href="http://www.football-italia.net/83455/chelsea-close-nainggolan" target="_blank"> Explore Story </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <h2> Chelsea U18 beat Man City U18 to win FA Youth Cup </h2>
-          <p>Chelsea’s vice-like grip on the FA Youth Cup is maintained. Joe Edwards’s side overpowered Manchester City here to secure the trophy for the third year in a row and the fifth time in seven seasons. Given the London club also retained the Uefa Youth League last week, these are heady days at junior level. </p>
+          <p><em>April 28,2016 - </em>Chelsea’s vice-like grip on the FA Youth Cup is maintained. Joe Edwards’s side overpowered Manchester City here to secure the trophy for the third year in a row and the fifth time in seven seasons. Given the London club also retained the Uefa Youth League last week, these are heady days at junior level. </p>
           <img src="img/fayouth.jpg" class="img-responsive">
           <br>
           <a class="btn btn-default" href="http://www.skysports.com/football/news/13865/10260516/chelsea-3-1-manchester-city-4-2-agg-blues-defend-fa-youth-cup-crown" target="_blank"> Explore Story </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <h2> Dermont Drummy new Crawley Manager</h2>
-          <p> Sky Bet League Two side Crawley have appointed former Chelsea coach Dermot Drummy as their new manager on a two-year deal. The 55-year-old has appointed former Aldershot coach Matt Gray as his assistant and will take training for the first time on Thursday ahead of Saturday's clash with Dagenham.</p>
+          <h2>Dermont Drummy new Crawley Manager</h2>
+          <p><em>April 28,2016 - </em> Sky Bet League Two side Crawley have appointed former Chelsea coach Dermot Drummy as their new manager on a two-year deal. The 55-year-old has appointed former Aldershot coach Matt Gray as his assistant and will take training for the first time on Thursday ahead of Saturday's clash with Dagenham.</p>
           <img src="img/dermot.jpg" class="img-responsive">
           <br>
           <a class="btn btn-default" href="http://www.dailymail.co.uk/sport/football/article-3561986/Former-Chelsea-Arsenal-coach-Dermot-Drummy-named-new-manager-League-Two-Crawley-Town.html" target="_blank"> Explore Story </a>
         </div>
       </div>
 
-      <!--Explore Stories-->
+      <!--Explore Stories Button-->
       <div class="container-fluid">
         <div class="row" id="explorestories">
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
@@ -195,8 +200,8 @@
         </div>
       </div>
 
-    </div> <!--end moarstories div-->
-  </div> <!--end fluid container -->  
+    </div> <!--end explore stories div-->
+  </div> <!--end fluid container -->
 
   <!--button for more stories-->
   <div class="container-fluid">
@@ -209,14 +214,14 @@
 
 </div>
 
-<!--page for scores-->
+<!--page for Stat Center-->
 <div class="container-fluid">
   <div class="row" id="scores">
     <div class="col-md-6">
       <h1> Stat Center </h1>
       <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#chelsearesults"> Chelsea Results </a></li>
-        <li><a data-toggle="tab" href="#leagueresults"> EPL Results </a></li>
+        <li><a data-toggle="tab" href="#leagueresults"> League Results </a></li>
       </ul>
       <div class="tab-content">
         <div id="chelsearesults" class="tab-pane fade in active">
@@ -250,7 +255,7 @@
       <!---->
       <ul class="nav nav-tabs">
         <li class="active"><a data-toggle="tab" href="#chelseaassists"> Chelsea Top Assisters </a></li>
-        <li><a data-toggle="tab" href="#leagueassists"> League Top AS </a></li>
+        <li><a data-toggle="tab" href="#leagueassists"> League Top Assisters </a></li>
       </ul>
       <div class="tab-content">
         <div id="chelseaassists" class="tab-pane fade in active">
@@ -269,7 +274,7 @@
     <div class="col-md-6">
       <div class="container-fluid">
         <h1> League Table </h1>
-        <h4> Last Updated 4/20/2016 </h4>
+        <h4> Last Updated 4/28/2016 </h4>
         <div id="leaguetable" class="table-responsive">
           <table class="table table-bordered table-hover table-condensed">
             <thead>
@@ -283,52 +288,52 @@
               <tr>
                 <td>1</td>
                 <td>Leicester City</td>
-                <td>73</td>
+                <td>76</td>
               </tr>
               <tr>
                 <td>2</td>
                 <td>Tottenham</td>
-                <td>68</td>
+                <td>69</td>
               </tr>
               <tr>
                 <td>3</td>
                 <td>Manchester City </td>
-                <td>61</td>
+                <td>64</td>
               </tr>
               <tr>
                 <td>4</td>
                 <td>Arsenal</td>
-                <td>73</td>
+                <td>64</td>
               </tr>
               <tr>
                 <td>5</td>
                 <td>Manchester United</td>
-                <td>56</td>
+                <td>59</td>
               </tr>
               <tr>
                 <td>6</td>
                 <td>West Ham United</td>
-                <td>53</td>
+                <td>56</td>
               </tr>
               <tr>
                 <td>7</td>
-                <td>Southampton</td>
-                <td>51</td>
+                <td>Liverpool</td>
+                <td>55</td>
               </tr>
               <tr>
                 <td>8</td>
-                <td>Liverpool</td>
-                <td>51</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>Stoke City</td>
-                <td>47</td>
+                <td>Southampton</td>
+                <td>54</td>
               </tr>
               <tr id="chelseacell">
-                <td>10</td>
+                <td>9</td>
                 <td>Chelsea</td>
-                <td>44</td>
+                <td>47</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Stoke City</td>
+                <td>47</td>
               </tr>
               <tr>
                 <td>11</td>
@@ -342,13 +347,13 @@
               </tr>
               <tr>
                 <td>13</td>
-                <td>AFC Bournemouth</td>
+                <td>West Brom</td>
                 <td>41</td>
               </tr>
               <tr>
                 <td>14</td>
-                <td>West Brom</td>
-                <td>40</td>
+                <td>AFC Bournemouth</td>
+                <td>41</td>
               </tr>
               <tr>
                 <td>15</td>
@@ -362,18 +367,18 @@
               </tr>
               <tr>
                 <td>17</td>
-                <td>Norwich City</td>
+                <td>Sunderland</td>
                 <td>31</td>
               </tr>
               <tr>
                 <td>18</td>
-                <td>Sunderland</td>
-                <td>30</td>
+                <td>Norwich City</td>
+                <td>31</td>
               </tr>
               <tr>
                 <td>19</td>
                 <td>Newcastle United</td>
-                <td>29</td>
+                <td>30</td>
               </tr>
               <tr>
                 <td>20</td>
@@ -388,7 +393,7 @@
   </div>
 </div>
 
-<!--headlines-->
+<!--Opinion/Editorial Headlines-->
 <div class="container-fluid">
   <div class="row" id="opinion">
     <h1> Editorial </h1>
@@ -397,7 +402,7 @@
       <h4> Chelsea’s new manager is demanding and unafraid of bruising egos. </h4>
       <img src="img/conte2.jpg" class="img-responsive">
       <br>
-      <p>Eat grass.” Out of context, Antonio Conte’s message to his Juventus players may have sounded more like a threat than an instruction but he repeated it over and over until they had powered their way back to the pinnacle of Italian football. It was his idiosyncratic way of telling them to work harder, to run further than everybody else.</p>
+      <p><em>April 28,2016 - </em> Eat grass.” Out of context, Antonio Conte’s message to his Juventus players may have sounded more like a threat than an instruction but he repeated it over and over until they had powered their way back to the pinnacle of Italian football. It was his idiosyncratic way of telling them to work harder, to run further than everybody else.</p>
       <p>Perhaps Conte will coin a new catchphrase at Chelsea. He has studied English for more than a year, even while confessing the language does not come naturally. Whatever words he chooses, the sentiment will stay the same. Conte has built his career on relentless graft and will expect nothing less from his squad at Stamford Bridge.</p>
       <p> The formula has served him well. In his playing days at Juventus he became club captain and won five Serie A titles, as well as the Champions League, Coppa Italia and Uefa Cup, despite “never considering myself to be a great talent”.</p>
       <p> As a manager he took the same club to three consecutive scudetti: each more impressive than the last. Juventus went undefeated in their first Serie A campaign under Conte, before improving their points tally in each of the next two seasons. His team finished the last of those, 2013-14, by becoming the first club to shatter the 100-point mark in the Italian top flight. </p>
@@ -424,15 +429,15 @@
       <h4> Another way Mourino massively screwed up </h4>
       <img src="img/lukaku.jpg" class="img-responsive">
       <br>
-      <p> This one's a bit of an odd story in many ways and not just because it's liable to dredge up a few repressed feelings and scratch at barely healed wounds. </p>
+      <p><em>April 28,2016 - </em> This one's a bit of an odd story in many ways and not just because it's liable to dredge up a few repressed feelings and scratch at barely healed wounds. </p>
 
-      <p><em>Jose Mourinho could cost Chelsea millions after advising against buy-back clause in Romelu Lukaku's Everton contract </em> </p>
+      <p><em> Jose Mourinho could cost Chelsea millions after advising against buy-back clause in Romelu Lukaku's Everton contract </em> </p>
 
       <p>That's the headline on the Telegraph 'EXCLUSIVE' carrying Matt Law's byline.  This usually indicates a Chelsea source of some sort.  It doesn't guarantee it of course, but more often than not, Law tends to represent that club's view on things.  As to who exactly at Chelsea might be briefing journalists on various issues is open for interpretation and speculation.  We only know a few things for sure, namely that the buck stops with Abramovich and that he has many advisors, all of whom can claim some amount of influence.  Michael Emenalo may be Director of Football, but there's actually a decent chance that he doesn't hold anywhere near the most amount of power in the Chelsea front office.  He certainly wouldn't have been trotted out as a scapegoat on the eve of Mourinho's sacking were that not the case.</p>
 
     </p> (The alternative explanation is that Emenalo is indeed the evil genius moving all the puppet strings in the background, in which case he deserves all the vitriol that has gone his way in recent months.)</p>
     <div id="luks" class="collapse">
-      <p> Now, supposedly, this story isn't sourced from within Chelsea, at least certainly not directly.  Law cites "sources close to the deal in Belgium", whoever they may be (Chelsea men? Lukaku's entourage? random agents?) who claim that on Mourinho's insistence, Chelsea opted to structure the deal with Everton in a way that resulted in a higher transfer fee (an Everton club record £28m, in fact) in exchange for no buy-back clause.  Apparently Mourinho was "unequivocal in his belief" that he would not be interested in re-signing Lukaku anytime soon (which, given how it all went down, is probably not surprising).  Bound to the manager's iron will, the Chelsea Board acquiesced and no doubt oh-so-reluctantly took the truckloads of cash that Everton were offering.  Now, the story goes, these same people "regret selling Lukaku with no buy-back clause" and apparently are trying to make themselves feel better by taking this giant stick of regret and mercilessly beating the spectre of Mourinho's dead horse with it.  It's good to let off a bit of steam every once in a while.</p>
+      <p> 4/28/16 - Now, supposedly, this story isn't sourced from within Chelsea, at least certainly not directly.  Law cites "sources close to the deal in Belgium", whoever they may be (Chelsea men? Lukaku's entourage? random agents?) who claim that on Mourinho's insistence, Chelsea opted to structure the deal with Everton in a way that resulted in a higher transfer fee (an Everton club record £28m, in fact) in exchange for no buy-back clause.  Apparently Mourinho was "unequivocal in his belief" that he would not be interested in re-signing Lukaku anytime soon (which, given how it all went down, is probably not surprising).  Bound to the manager's iron will, the Chelsea Board acquiesced and no doubt oh-so-reluctantly took the truckloads of cash that Everton were offering.  Now, the story goes, these same people "regret selling Lukaku with no buy-back clause" and apparently are trying to make themselves feel better by taking this giant stick of regret and mercilessly beating the spectre of Mourinho's dead horse with it.  It's good to let off a bit of steam every once in a while.</p>
 
       <p> Placing full blame on Jose is of course far too simplistic and convenient.  He's by no means faultless; he might even be the most responsible of all the people involved (though he'd undoubtedly disagree).  It was Mourinho after all who chose not to play Lukaku, who advocated for keeping, bringing in, and selecting veteran strikers like Eto'o and Drogba and Ba and Torres.  Mourinho was the one who insisted on making this a cut-throat competition for Lukaku despite the big kid's success while on loan.  These weren't necessarily the wrong choices at the time, but just as in the case of Kevin De Bruyne, they turned out to be the wrong choices for that particular situation, and they eventually resulted in Lukaku packing his bags and looking for something different.  In hindsight -- and we care because these two certainly turned out great -- these egregious outcomes could've been avoided with just slightly different management.</p>
 
@@ -456,7 +461,7 @@
     <h6> Our Editor in Chief predicts the upcoming gameweek </h6>
 
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <h2> Mathweek 36 : The Picks </h2>
+      <h2> Mathweek 36 : Game Predictions </h2>
       <table class="table table-responsive table-hover table-bordered">
         <thead>
           <td> MatchUp </td>
@@ -518,7 +523,7 @@
       </table>
     </div>
     <div id="fantasypicks" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-      <h2> Fantasy Picks </h2>
+      <h2> Mathweek 36: Fantasy Picks </h2>
       <div id="fantasypicwrapper">
         <img src="img/Fantasy.jpg">
       </div>
@@ -552,14 +557,14 @@
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <h1> The Chelsea Wire </h1>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-        <p> Site Created by Abhishek Swain, a student at Washington University in St. Louis, for academic purposes. All copyrights belong to Chelsea Football Club, and all content to their respective owners. No commerical use inteded. </p>
+      <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+        <p> Site Created by <a href="https://www.youtube.com/watch?v=lRFDHpJ-aoQ" data-toggle="tooltip" title="Abhi"> Abhishek Swain </a> , a student at Washington University in St. Louis. Abhi Swain has been an avid football since he was 8. He has had a passion for the sport ever since he watched Michael Ballack drag Germany into the 2002 World Cup Final, where they suffered a heart breaking loss to Brazil. He became a Chelsea fan when Ballack joined Chelsea in 2008, and has been a loyal supporter since. He loves hearing from other Chelsea fans, and would love to hear from you!  </p>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
         <h4>Contact Information </h4>
         <p><a href="https://www.linkedin.com/in/abhiswain" target="_blank">LinkedIn</a></p>
         <p><a href="https://github.com/abhiswain9" target="_blank">Github</a></p>
-        <p><a href="mailto:abhiswain9@gmail.com?Subject=Chelsea%20Wire%20Contact" target="_top">Email</a></p>
+        <p><a href="mailto:abhiswain9@gmail.com">Email</a></p>
       </div>
     </div>
   </div>

@@ -14,11 +14,12 @@ img{
 }
 
 /*
-PAGEHEADER <------------
+pageheader
 jumbotron
-headlines
-scores
+HEADLINES  <------------
+stat center
 opinion
+abhi's picks
 videos
 footer
 */
@@ -41,10 +42,11 @@ footer
 
 /*
 pageheader
-JUMBOTRON  <------------
-headlines
-scores
+jumbotron
+HEADLINES  <------------
+stat center
 opinion
+abhi's picks
 videos
 footer
 */
@@ -73,8 +75,9 @@ footer
 pageheader
 jumbotron
 HEADLINES  <------------
-scores
+stat center
 opinion
+abhi's picks
 videos
 footer
 */
@@ -83,6 +86,7 @@ footer
   color:  #00025a;
   font-weight: bolder;
   padding-top: 70px;
+
 }
 
 #morestories{
@@ -105,6 +109,10 @@ footer
 
 #morestoriesbtn:hover{
   background-color: #00025a;
+}
+
+#explorestories{
+  padding-top: 20px;
 }
 
 /*Dropdown stuff, credit :http://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown*/
@@ -151,9 +159,9 @@ footer
 pageheader
 jumbotron
 headlines
-SCORES <------------
+STAT CENTER <---------
 opinion
-table
+abhi's picks
 videos
 footer
 */
@@ -170,7 +178,7 @@ footer
 }
 
 #scores{
-  padding-top: 150px;
+  padding-top: 70px;
   padding-bottom: 20px;
   background-color: #00025a;
   color: white;
@@ -216,8 +224,9 @@ tr:hover{
 pageheader
 jumbotron
 headlines
-scores
-OPINION <------------
+stat center
+OPINION
+abhi's picks
 videos
 footer
 */
@@ -228,7 +237,7 @@ footer
 }
 
 #opinion{
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 100px;
 }
 
@@ -237,9 +246,10 @@ footer
 pageheader
 jumbotron
 headlines
-scores
+stat center
 opinion
-VIDEOS <------------
+ABHI'S PICKS <--------
+videos
 footer
 */
 
@@ -271,39 +281,27 @@ footer
   padding-left: 50px;
 }
 
+/*
+pageheader
+jumbotron
+headlines
+stat center
+opinion
+abhi's picks
+VIDEOS <-------
+footer
+*/
+
 #videos h1{
+  color: #00025a;
   font-weight: bolder;
   padding-bottom: 50px;
 }
 
 #videos{
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 100px;
 }
-
-/*
-pageheader
-jumbotron
-headlines
-scores
-opinion
-videos
-FOOTER <------------
-*/
-#footer h1{
-    font-family: 'Vollkorn', serif;
-    font-weight: bolder;
-}
-
-#footer{
-  padding-top: 50px;
-  padding-bottom: 70px;
-  width: 100%;
-  background-color:  #050613;
-  color:white;
-  font-family: 'Roboto Condensed',sans-serif;
-}
-
 
 /*Youtube embed dynamic resizing code. Credit to:http://alistapart.com/d/creating-intrinsic-ratios-for-video/example3.html */
 .videoWrapper {
@@ -319,4 +317,27 @@ FOOTER <------------
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+/*
+pageheader
+jumbotron
+stat center
+opinion
+abhi's picks
+videos
+FOOTER <-------
+*/
+#footer h1{
+    font-family: 'Vollkorn', serif;
+    font-weight: bolder;
+}
+
+#footer{
+  padding-top: 50px;
+  padding-bottom: 70px;
+  width: 100%;
+  background-color:  #050613;
+  color:white;
+  font-family: 'Roboto Condensed',sans-serif;
 }
